@@ -23,7 +23,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         if indexPath.row % 2 == 0 {
             cell.imageView?.tintColor = .white
+        } else {
+            cell.imageView?.tintColor = .orange
         }
+        
         return cell
     }
 }
